@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.main_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: .5s ease;
+}
+.container{
+    width: 50%;
+    height: 76vh;
+    background-color: white;
+    border-radius: 40px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.question{
+    width: 100%;
+    padding: 10px;
+    border: 4px solid #00B5D9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: .4s ease;
+    justify-content: center;
+}
+.question span {
+    color: rgb(75, 75, 75);
+    font-size: 23px;
+}
+.answers{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.answer{
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #00B5D9;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.answer span {
+    font-size: 22px;
+}
+.true{
+    background-color: green;
+    border: 2px solid green;
+    color: white;
+}
+.false{
+    background-color: red;
+    border: 2px solid red;
+    color: white;
+}
+.sheet{
+    width: 30%;
+    height: 46vh;
+    background-color: white;
+    border-radius: 40px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    transform: translateY(-110px);
+}
+.questions{
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.corrects{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.div span{
+    font-size: 20px;
+}
+.div b{
+    font-size: 20px;
+}
+.time {
+    width: 100%;
+    padding: 10px;
+    transform: translate(85px, 21px);
+}
+.timer span{
+    font-size: 68px;
+}
+.modal{
+    position: fixed;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    top: -100%;
+    right: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: .4s ease;
+}
+.back{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .9);
+}
+.count{
+    font-size: 20px;
+}
+.try_again{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00B5D9;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+}
+a{
+    all: unset;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00B5D9;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;  
+}
